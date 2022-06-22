@@ -3,13 +3,13 @@ import yfinance as yf
 
 bot = telebot.TeleBot('5230941298:AAEl8XGs7NgMu9PxHCnsii8usDr_fwUd8z0')
 
-@bot.message_handler(commands=['Greet'])
-def greet(message):
-    bot.reply_to(message, "Hey!")
+# @bot.message_handler(commands=['Greet'])
+# def greet(message):
+#     bot.reply_to(message, "Hey!")
 
-@bot.message_handler(commands=['Hello'])
-def hello(message):
-    bot.send_message(message.chat.id, "Hello!")
+# @bot.message_handler(commands=['Hello'])
+# def hello(message):
+#     bot.send_message(message.chat.id, "Hello!")
 
 def stock_request(message):
   request = message.text.split()

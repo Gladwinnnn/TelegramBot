@@ -31,4 +31,4 @@ def send_price(message):
   else:
     bot.send_message(message.chat.id, "Invalid Ticker")
 
-bot.infinity_polling()
+bot.polling(none_stop=True)
